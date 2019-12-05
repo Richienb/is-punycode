@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Is Punycode [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/is-punycode/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/is-punycode)
 
-My awesome module.
+Check if a string is punycode.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/is-punycode.png)](https://npmjs.com/package/is-punycode)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install is-punycode
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const punycodeRegex = require("punycode-regex");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+isPunycode("xn--tiq49xqyj")
+//=> true
 ```
 
 ## API
 
-### theModule(input, options?)
+### isPunycode(string)
 
-#### input
+#### string
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The string to check.

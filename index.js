@@ -1,7 +1,5 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const punycodeRegex = require("punycode-regex")()
 
-    return `${input} & ${postfix}`
-}
+module.exports = (string) => punycodeRegex.test(string)

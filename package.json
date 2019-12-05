@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "is-punycode",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Check if a string is punycode.",
+    "repository": "https://github.com/Richienb/is-punycode.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,24 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "xo",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "punycode",
+        "url",
+        "domain",
+        "check",
+        "is",
+        "type",
+        "string"
+    ],
+    "dependencies": {
+        "punycode-regex": "^1.0.0"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint-config-richienb": "^0.2.3",
